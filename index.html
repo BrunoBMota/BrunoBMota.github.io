@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruno Mota</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -13,14 +13,22 @@
       <div class="header">
         <h1>Bruno Mota</h1>
         <p>Software Developer</p>
+        <nav class="navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#project">Project</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
     <!-- Main -->
     <main>
       <article>
-        <div class="main">
-          <img src="images/headshot.png" alt="Photo of Me" width="200"> 
+        <div class="main" id="home">
+          <img src="/images/headshot.png" alt="Photo of Me" width="200px"> 
           <h2>Hi! I'm Bruno</h2>
           <p>Located in Orlado, FL.</p>
           <p>Currently I am completing a bachelor’s degree in computer sciences at the University of Central Florida.</p>
@@ -30,14 +38,14 @@
       <hr>
       <!-- About Section -->
       <article>
-        <div class="main">
+        <div class="main" id="about">
           <h2>About Bruno</h2>
           <p>I am a developer with five years of experience in research, development, and implementation of internal systems, tools, and web applications.</p>
           <p>Working closely with clients to deliver a state of the art, user-friendly website combined with innovative use of external technologies and systems for quick deployment.</p>
           <h3>Hobbies: </h3>
           <ul>
-            <li>Video Game Development</li>
             <li>Web Development</li>
+            <li>Video Game Development</li>
             <li>Graphic Design</li>
           </ul>
         </div>
@@ -46,7 +54,7 @@
       <hr>
       <!-- Contact Section -->
       <article>
-        <div class="main">
+        <div class="main" id="contact">
           <h2>Contact Bruno</h2>
           <p>Feel free to reach out to me on any of these platforms:</p>
           <ol>
@@ -60,11 +68,37 @@
               <a href="https://www.artstation.com/brunobm">ArtStation</a>
             </li>
             <li>
-              <a href="mailto:bmota2233@gmail.com">E-Mail Me</a>
+              <a href="mailto:bmota2233@gmail.com">Email Me</a>
             </li>
           </ol>
+          <div class="contact-form">
+            <form action="https://formspree.io/mwkrywyo" method="post">
+              <label for="user-name">Name:</label>
+              <input id="user-name" type="text" name="name">
+              
+              <label for="user-email">Email:</label>
+              <input id="user-email" type="text" name="email">
+              
+              <label for="user-message">Message:</label>
+              <textarea name="message" id="user-message" cols="30" rows="10"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
         </div>
       </article>
+
+      <hr>
+      <!-- Project Section -->
+      <article>
+        <div class="main" id="project">
+          <h2>Project</h2>
+          <h3>EXP & DINUSTY CYBERPUNK CHALLENGE - Small Apartment</h3>
+          <img src="https://cdnb.artstation.com/p/assets/images/images/025/542/515/medium/bruno-mota-highresscreenshot00001.jpg?1586130986" alt="">
+          <p>Student project showing off modeling and texturing skills.</p>
+          <p>You can find out more about it&nbsp;<a href="https://brunobm.artstation.com/projects/3o5zgA">here</a></p>
+        </div>
+      </article>
+
     </main>
 
     <!-- Footer -->

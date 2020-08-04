@@ -1,3 +1,4 @@
+/* global styles */
 html {
   color: #fff;
   background: #000;
@@ -23,6 +24,7 @@ body {
   background: #333;
 }
 
+/* header styles */
 .header h1 {
   margin-bottom: 0;
   font-size: 32px;
@@ -32,8 +34,37 @@ body {
   font-size: 16px;
 }
 
+/* navigation styles */
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.navigation ul li {
+  padding: 10px 20px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a:focus,
+.navigation ul li a:active {
+  color: #0a0;
+}
+
+
+/* main styles */
+.main h3 {
+  text-align: center;
+}
 .main p {
-  padding: 0 50px 0 50px; /*top 0 right 50px bottom 0 left 50px*/
+  padding: 0 50px;
 }
 
 .main ol, ul {
@@ -55,10 +86,64 @@ body {
   color: #0f0
 }
 
+/* contact form styles */
+.contact-form {
+  min-width: 50%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form form textarea, 
+.contact-form form input {
+  background-color: #777;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  background-color: #040;
+  color: #fff;
+  padding: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* project section styles */
+#project img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+/* footer styles */
 .footer {
   height: 80px;
 }
 
 .footer p {
   margin: auto;
+}
+
+/* media queries for mobile */
+@media all and (max-width: 800px) {
+  .navigation ul li {
+    padding: 10px;
+  }
+  .main p {
+    padding: 0 20px;
+  }
+  .contact-form {
+    width: 90%;
+  }
+  /* home section styles */
+  #home p {
+    text-align: center;
+  }
 }
