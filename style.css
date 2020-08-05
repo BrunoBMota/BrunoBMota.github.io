@@ -44,7 +44,7 @@ body {
 }
 
 .navigation ul li {
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 .navigation ul li a {
@@ -64,7 +64,7 @@ body {
   text-align: center;
 }
 .main p {
-  padding: 0 50px;
+  padding: 0 20px;
 }
 
 .main ol, ul {
@@ -86,9 +86,14 @@ body {
   color: #0f0
 }
 
+/* home section styles */
+#home p {
+  text-align: left;
+}
+
 /* contact form styles */
 .contact-form {
-  min-width: 50%;
+  min-width: 90%;
 }
 
 .contact-form form {
@@ -131,19 +136,18 @@ body {
   margin: auto;
 }
 
-/* media queries for mobile */
-@media all and (max-width: 800px) {
+/* media queries for desktop */
+@media all and (min-width: 800px) {
   .navigation ul li {
-    padding: 10px;
+    padding: 10px 20px;
   }
   .main p {
-    padding: 0 20px;
+    padding: 0 50px;
   }
   .contact-form {
-    width: 90%;
+    width: 50%;
   }
-  /* home section styles */
   #home p {
-    text-align: center;
+    text-align: left;
   }
 }
